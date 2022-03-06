@@ -1,48 +1,131 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - _2035Cars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/384f58f878.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">_2035Cars</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="nav-menu">
+            <a href="">
+                <div>
+                    Logo
                 </div>
-            </div>
-        </nav>
+            </a>
+            @*CLOSE MOBILE MENU ICON (CROSS)*@
+            <button class="nav-mobile"><i class="fa-solid fa-xmark"></i></button>
+            @*CLOSE MOBILE MENU ICON (CROSS)*@
+            <a href=""><h3>20E5Cars</h3></a>
+            <ul>
+                <li>
+                    <a href="">Główna</a>
+                </li>
+                <li>
+                    <a href="">Szukaj</a>
+                </li>
+                <li>
+                    <a href="">Auta&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li>Wybierz markę</li>
+                        <li>Wybierz typ</li>
+                        <li>Wszystkie</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Więcej&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li>Nasz zespół</li>
+                        <li>Nasza misja</li>
+                    </ul>
+                </li>
+                <li><a href="">Kontakt</a></li>
+            </ul>
+            <div class="nav-mobile">Belka</div>
+            <p class="nav-mobile">
+                <i class="fa-solid fa-phone"></i>
+                <span>+48</span>
+                123456789
+            </p>
+            <p class="nav-mobile">
+                <i class="fa-solid fa-at"></i>
+                Adres Email
+            </p>
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-user"></i>&nbsp;Zaloguj się</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-user-plus"></i>&nbsp;Zarejestruj się</a>
+                </li>
+            </ul>
+            @*MENU MOBILE BAR ICON*@
+            <button class="nav-mobile"><i class="fa-solid fa-bars"></i></button>
+            @*MENU MOBILE BAR ICON*@
+
+            @*LOGIN/REGISTER ICON*@
+            <a href="" class="nav-mobile"><i class="fa-solid fa-user-group"></i></a>
+            @*LOGIN/REGISTER ICON*@
+        </div>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - _2035Cars - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer>
+        <a href="">
+            <div>
+                Logo
+            </div>
+        </a>
+        <a href=""><h3>20E5Cars</h3></a>
+        <ul>
+            <li>
+                <a href="">Główna</a>
+            </li>
+            <li>
+                <a href="">Szukaj</a>
+            </li>
+            <li>
+                <a href="">Auta&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li>
+                <a href="">Więcej&nbsp;<i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li>
+                <a href="">Kontakt</a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-user"></i>&nbsp;Zaloguj się</a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-user-plus"></i>&nbsp;Zarejestruj się</a>
+            </li>
+        </ul>
+        <p>
+            TekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekst
+            TekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekstTekst
+        </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            <span>+48</span>
+            123456789
+        </p>
+        <p>
+            <i class="fa-solid fa-at"></i>
+            Adres Email
+        </p>
+        <p>Ulica</p>
+        <p>Miasto</p>
+        <div>Belka</div>
+        <p>2035Cars - Wszelkie prawa zastrzeżone <a>Polityka prywatności</a></p>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Resize.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,4 +1,16 @@
 ﻿:root {
+    --basicColor: black;
+    --whiteColor: white;
+    --orangeColor: rgb(255, 101, 23);
+    --blueDarkColor: rgb(14, 29, 49);
+}
+
+* {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: lightgray;
 }
 
 body {
@@ -9,13 +21,105 @@ body {
 
 /*MOBILE VERSION*/
 
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: var(--basicColor);
+}
+
+a {
+    color: var(--basicColor);
+}
+
+li {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.color-white {
+    color: var(--whiteColor)
+}
+
+.color-orange {
+    color: var(--orangeColor);
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.display-horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-bar {
+    padding: 10px 20px;
+    background-color: var(--blueDarkColor);
+}
+
+.menu-bar-title {
+    line-height: 37px;
+    padding: 0;
+    /*font-family: 'Niconne', cursive;*/
+}
+
+.small-icon {
+    font-size: 36px;
+}
+
+.mobile-nav-links-bg a {
+    color: var(--whiteColor);
+}
+
+.mobile-nav-links-bg {
 
 
+    /*display: none;*/
 
 
+    background-color: var(--blueDarkColor);
+    color: var(--whiteColor);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: -110vw;
+    transition: all .35s ease-out;
+}
+
+.mobile-nav-links-bg-active{
+    left: 0;
+}
+
+.cross-button-navlinks-bar {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(38, 40, 39);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.mobile-nav-links{
+    padding-top: 10vh;
+}
 /*DESKTOP VERSION*/
 @media screen and (min-width: 959px) {
-
     .mobile {
         display: none;
     }

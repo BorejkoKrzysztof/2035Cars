@@ -6,71 +6,83 @@
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <script src="https://kit.fontawesome.com/384f58f878.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <div class="nav-menu">
-            <a href="">
-                <div>
-                    Logo
+        <nav class="nav-menu">
+            <div class="display-horizontal mobile-menu-bar">
+                @*MENU MOBILE BAR ICON*@
+                <i class="fa-solid fa-bars mobile small-icon color-orange c-pointer" id="open-mobile-nav-links"></i>
+                @*MENU MOBILE BAR ICON*@
+                <div class="display-horizontal">
+                    <a href="">
+                        <div>
+                            Logo
+                        </div>
+                    </a>
+                    <a href="">
+                        <h3 class="menu-bar-title">
+                            &nbsp;20E5Cars
+                        </h3>
+                    </a>
                 </div>
-            </a>
-            <a href=""><h3>20E5Cars</h3></a>
-            @*CLOSE MOBILE MENU ICON (CROSS)*@
-            <button class="mobile"><i class="fa-solid fa-xmark"></i></button>
-            @*CLOSE MOBILE MENU ICON (CROSS)*@
-
-            @*MENU MOBILE BAR ICON*@
-            <button class="mobile"><i class="fa-solid fa-bars"></i></button>
-            @*MENU MOBILE BAR ICON*@
-
-            @*LOGIN/REGISTER ICON*@
-            <a href="" class="mobile"><i class="fa-solid fa-user-group"></i></a>
-            @*LOGIN/REGISTER ICON*@
-            <ul>
-                <li>
-                    <a href="">Główna</a>
-                </li>
-                <li>
-                    <a href="">Szukaj</a>
-                </li>
-                <li>
-                    <a href="">Auta&nbsp;<i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                        <li>Wybierz markę</li>
-                        <li>Wybierz typ</li>
-                        <li>Wszystkie</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Więcej&nbsp;<i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                        <li>Nasz zespół</li>
-                        <li>Nasza misja</li>
-                    </ul>
-                </li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-            <div class="mobile">Belka</div>
-            <p class="mobile">
-                <i class="fa-solid fa-phone"></i>
-                <span>+48</span>
-                123456789
-            </p>
-            <p class="mobile">
-                <i class="fa-solid fa-at"></i>
-                Adres Email
-            </p>
-            <ul>
-                <li>
-                    <a href=""><i class="fa-solid fa-user"></i>&nbsp;Zaloguj się</a>
-                </li>
-                <li>
-                    <a href=""><i class="fa-solid fa-user-plus"></i>&nbsp;Zarejestruj się</a>
-                </li>
-            </ul>
-        </div>
+                @*LOGIN/REGISTER ICON*@
+                <a href="" class="mobile transparent-button"><i class="fa-solid fa-user-group small-icon color-white"></i></a>
+                @*LOGIN/REGISTER ICON*@
+            </div>
+            <div class="mobile-nav-links-bg" id="mobile-nav-links-background">
+                <div class="cross-button-navlinks-bar">
+                    @*CLOSE MOBILE MENU ICON (CROSS)*@
+                    <i class="fa-solid fa-xmark mobile small-icon color-orange c-pointer" id="close-mobile-nav-links"></i>
+                    @*CLOSE MOBILE MENU ICON (CROSS)*@
+                </div>
+                <ul class="mobile-nav-links">
+                    <li>
+                        <a href="">Główna</a>
+                    </li>
+                    <li>
+                        <a href="">Szukaj</a>
+                    </li>
+                    <li>
+                        Auta&nbsp;<i class="fa-solid fa-angle-down"></i>
+                        <ul class="hidden">
+                            <li>Wybierz markę</li>
+                            <li>Wybierz typ</li>
+                            <li>Wszystkie</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Więcej&nbsp;<i class="fa-solid fa-angle-down"></i>
+                        <ul class="hidden">
+                            <li>Nasz zespół</li>
+                            <li>Nasza misja</li>
+                        </ul>
+                    </li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+                <p class="mobile">
+                    <i class="fa-solid fa-phone color-orange"></i>
+                    <span>+48</span>
+                    123&nbsp;456&nbsp;789
+                </p>
+                <p class="mobile">
+                    <i class="fa-solid fa-at color-orange"></i>
+                    Adres Email
+                </p>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-solid fa-user"></i>&nbsp;Zaloguj się</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-user-plus"></i>&nbsp;Zarejestruj się</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="container">
         <main role="main">

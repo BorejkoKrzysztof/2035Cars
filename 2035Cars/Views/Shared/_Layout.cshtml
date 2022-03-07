@@ -16,10 +16,18 @@
                     Logo
                 </div>
             </a>
-            @*CLOSE MOBILE MENU ICON (CROSS)*@
-            <button class="nav-mobile"><i class="fa-solid fa-xmark"></i></button>
-            @*CLOSE MOBILE MENU ICON (CROSS)*@
             <a href=""><h3>20E5Cars</h3></a>
+            @*CLOSE MOBILE MENU ICON (CROSS)*@
+            <button class="mobile"><i class="fa-solid fa-xmark"></i></button>
+            @*CLOSE MOBILE MENU ICON (CROSS)*@
+
+            @*MENU MOBILE BAR ICON*@
+            <button class="mobile"><i class="fa-solid fa-bars"></i></button>
+            @*MENU MOBILE BAR ICON*@
+
+            @*LOGIN/REGISTER ICON*@
+            <a href="" class="mobile"><i class="fa-solid fa-user-group"></i></a>
+            @*LOGIN/REGISTER ICON*@
             <ul>
                 <li>
                     <a href="">Główna</a>
@@ -44,13 +52,13 @@
                 </li>
                 <li><a href="">Kontakt</a></li>
             </ul>
-            <div class="nav-mobile">Belka</div>
-            <p class="nav-mobile">
+            <div class="mobile">Belka</div>
+            <p class="mobile">
                 <i class="fa-solid fa-phone"></i>
                 <span>+48</span>
                 123456789
             </p>
-            <p class="nav-mobile">
+            <p class="mobile">
                 <i class="fa-solid fa-at"></i>
                 Adres Email
             </p>
@@ -62,13 +70,6 @@
                     <a href=""><i class="fa-solid fa-user-plus"></i>&nbsp;Zarejestruj się</a>
                 </li>
             </ul>
-            @*MENU MOBILE BAR ICON*@
-            <button class="nav-mobile"><i class="fa-solid fa-bars"></i></button>
-            @*MENU MOBILE BAR ICON*@
-
-            @*LOGIN/REGISTER ICON*@
-            <a href="" class="nav-mobile"><i class="fa-solid fa-user-group"></i></a>
-            @*LOGIN/REGISTER ICON*@
         </div>
     </header>
     <div class="container">
@@ -125,7 +126,7 @@
         <div>Belka</div>
         <p>2035Cars - Wszelkie prawa zastrzeżone <a>Polityka prywatności</a></p>
     </footer>
-    <script src="~/js/Resize.js"></script>
+    <script src="~/js/Nav.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

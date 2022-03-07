@@ -1,1 +1,22 @@
-﻿
+﻿:root {
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*MOBILE VERSION*/
+
+
+
+
+
+/*DESKTOP VERSION*/
+@media screen and (min-width: 959px) {
+
+    .mobile {
+        display: none;
+    }
+}

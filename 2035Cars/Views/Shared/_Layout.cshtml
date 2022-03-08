@@ -34,35 +34,39 @@
                 <a href="" class="mobile transparent-button"><i class="fa-solid fa-user-group small-icon color-white"></i></a>
                 @*LOGIN/REGISTER ICON*@
             </div>
-            <div class="mobile-nav-links-bg" id="mobile-nav-links-background">
+            <div class="mobile-nav-links-bg theme-transition" id="mobile-nav-links-background">
                 <div class="cross-button-navlinks-bar">
                     @*CLOSE MOBILE MENU ICON (CROSS)*@
                     <i class="fa-solid fa-xmark mobile small-icon color-orange c-pointer" id="close-mobile-nav-links"></i>
                     @*CLOSE MOBILE MENU ICON (CROSS)*@
                 </div>
                 <ul class="mobile-nav-links">
-                    <li class="mobile-nav-links-size">
+                    <li class="mobile-nav-links-size nav-links-border">
                         <a href="">Główna</a>
                     </li>
-                    <li class="mobile-nav-links-size">
+                    <li class="mobile-nav-links-size nav-links-border">
                         <a href="">Szukaj</a>
                     </li>
-                    <li class="mobile-nav-links-size display-horizontal">
-                        Auta&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i>
-                        <ul class="hidden">
+                    <li class="mobile-nav-links-size display-horizontal nav-links-border" id="cars-nav-link">
+                            Auta
+                        <i class="fa-solid fa-angle-down theme-transition" id="cars-nav-link-arrow">
+                        </i>
+                        <ul class="hidden" id="hidden-links-car">
                             <li>Wybierz markę</li>
                             <li>Wybierz typ</li>
                             <li>Wszystkie</li>
                         </ul>
                     </li>
-                    <li class="mobile-nav-links-size display-horizontal">
-                        Więcej&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i>
-                        <ul class="hidden">
+                    <li class="mobile-nav-links-size display-horizontal nav-links-border" id="more-nav-link">
+                            Więcej
+                            <i class="fa-solid fa-angle-down theme-transition" id="more-nav-link-arrow">
+                            </i>
+                        <ul class="hidden" id="hidden-links-more">
                             <li>Nasz zespół</li>
                             <li>Nasza misja</li>
                         </ul>
                     </li>
-                    <li class="mobile-nav-links-size"><a href="">Kontakt</a></li>
+                    <li class="mobile-nav-links-size nav-links-border"><a href="">Kontakt</a></li>
                 </ul>
                 <p class="mobile mobile-nav-links-size text-center">
                     <i class="fa-solid fa-phone color-orange"></i>
@@ -84,7 +88,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" id="page-content">
         <main role="main">
             @RenderBody()
         </main>

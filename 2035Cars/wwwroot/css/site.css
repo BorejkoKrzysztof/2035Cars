@@ -12,6 +12,8 @@
 
 header {
     background-color: lightgray;
+    /*position: fixed;*/
+    /*width: 100%;*/
 }
 
 body {
@@ -24,7 +26,7 @@ body {
 
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
-    color: var(--basicColor);
+    color: var(--whiteColor);
 }
 
 a {
@@ -59,6 +61,14 @@ nav ul {
     color: var(--orangeColor);
 }
 
+.color-darkGrey{
+    background-color: var(--greyDarkForMenu);
+}
+
+.color-Theme-Dark-Blue{
+    background-color: var(--blueDarkColor);
+}
+
 .c-pointer {
     cursor: pointer;
 }
@@ -71,7 +81,7 @@ nav ul {
 
 .mobile-menu-bar {
     padding: 10px 20px;
-    background-color: var(--blueDarkColor);
+    /*background-color: var(--blueDarkColor);*/
 }
 
 .menu-bar-title {
@@ -120,6 +130,7 @@ nav ul {
 
 .mobile-nav-links-bg-active{
     left: 0;
+    position: fixed;
 }
 
 .cross-button-navlinks-bar {
@@ -145,6 +156,27 @@ nav ul {
 .nav-links-border {
     border-bottom: 3px solid var(--greyDarkForMenu);
 }
+
+footer {
+    padding: 10px 25px 30px 25px;
+    color: var(--whiteColor);
+    text-align: center;
+    font-size: 25px;
+}
+
+.wrap-text{
+    overflow-wrap: break-word;
+}
+
+.social-icons-size{
+    font-size: 60px;
+}
+
+/*footer *{
+    color: var(--whiteColor);
+}*/
+
+
 /*DESKTOP VERSION*/
 @media screen and (min-width: 959px) {
     .mobile {

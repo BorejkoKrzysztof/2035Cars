@@ -1,10 +1,13 @@
 ﻿
 // OPEN HAMBURGER MENU
-document.getElementById('open-mobile-nav-links').addEventListener('click', () => {
+function OpenMobileMenu()  {
     var mobileNavLinksBackground = document.getElementById('mobile-nav-links-background');
 
     mobileNavLinksBackground.classList.toggle('mobile-nav-links-bg-active');
-});
+}
+
+document.getElementById('open-mobile-nav-links').addEventListener('click', OpenMobileMenu);
+document.getElementById('open-mobile-nav-links-circle').addEventListener('click', OpenMobileMenu);
 
 // CLOSE HAMBURGER MENU
 document.getElementById('close-mobile-nav-links').addEventListener('click', () => {
@@ -54,3 +57,15 @@ document.getElementById('more-nav-link').addEventListener('click', () => {
         hiddenMenuLauncher.classList.add('hidden');
     }
 });
+
+// SHOW CIRCLE OPEN-NAV-BUTTON AFTER SCROLL
+document.addEventListener('scroll', () => {
+
+    if (window.scrollY > window.innerHeight * 0.6) {
+        document.getElementById('open-mobile-nav-links-circle').classList.remove('hidden');
+    }
+    else {
+        document.getElementById('open-mobile-nav-links-circle').classList.add('hidden');
+    }
+})
+
